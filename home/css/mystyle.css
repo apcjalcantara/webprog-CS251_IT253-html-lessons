@@ -83,18 +83,20 @@ ul {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 
 .gallery-item {
   flex: 1 1 200px;
+  max-width: 300px;
   height: 200px;
   background-color: #D2CDCB;
   color: #393638;
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 footer {
