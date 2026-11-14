@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/mystyle.css">
-    <title>First WEBPROG Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEBRPROG Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <header>
@@ -14,29 +15,48 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#interests">Education</a>
     <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
   </nav>
 
   <main>
 
-    <section id="about" style="text-align: center;">
-      <h2>About Me</h2>
-        <img src="images/image1.jpg" 
-       style="max-width: 100%; max-height: 100%; object-fit: contain;">
-      <p style="text-align: center;">
-        BS Information Technology 
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        BS Information Technology Student
         <br>
         IT-253
-      </p>
     </section>
 
-    <section id="contact" style="text-align: center;">
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Hiking</li>
+        <li>Gaming</li>
+      </ul>
+    </section>
+
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: tdalcantara@student.apc.edu.ph</p>
-      <p>Phone: 09123456789</p>
+      <p>Number: 09123456789</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item">Picture 1</div>
+        <div class="gallery-item">Picture 2</div>
+      </div>
     </section>
 
   </main>
+
+  <footer>
+    &copy; 2026
+  </footer>
 
 </body>
 </html>
