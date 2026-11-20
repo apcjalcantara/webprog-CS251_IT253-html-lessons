@@ -1,4 +1,4 @@
-
+/* css */
 * {
   box-sizing: border-box;
 }
@@ -48,12 +48,17 @@ nav a:hover {
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 20px 0;
   padding: 0 10px;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
 section {
@@ -62,8 +67,6 @@ section {
   border-top: 4px solid #873D4A;
   border-radius: 6px;
   padding: 20px 24px;
-  flex: 1 1 300px;
-  max-width: 450px;
 }
 
 section h2 {
@@ -76,8 +79,7 @@ ul {
 }
 
 #gallery {
-  flex: 1 1 100%;
-  max-width: none;
+  margin: 0 10px 20px;
 }
 
 .gallery {
