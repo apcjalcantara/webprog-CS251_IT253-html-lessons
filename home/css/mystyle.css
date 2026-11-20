@@ -49,10 +49,16 @@ nav a:hover {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 20px 0;
   padding: 0 10px;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
 section {
@@ -73,7 +79,7 @@ ul {
 }
 
 #gallery {
-  grid-column: 1 / -1;
+  margin: 0 10px 20px;
 }
 
 #contact {
